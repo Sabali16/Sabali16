@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የሙሴ ታሪክ - The Story of Moses</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+        
+        :root {
+            --primary: #8B4513;
+            --secondary: #D4AF37;
+            --dark: #1A120B;
+            --light: #F5F5DC;
+            --accent: #556B2F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.8;
+            background-image: url('https://www.transparenttextures.com/patterns/papyrus.png');
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin: 2rem 0 1rem;
+            border-bottom: 1px dashed var(--primary);
+            padding-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+        
+        .bible-verse {
+            font-style: italic;
+            padding: 1.5rem;
+            background-color: rgba(139, 69, 19, 0.1);
+            border-left: 4px solid var(--secondary);
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .bible-verse::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+            color: rgba(139, 69, 19, 0.2);
+        }
+        
+        .highlight {
+            background-color: rgba(212, 175, 55, 0.3);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(139, 69, 19, 0.3);
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Animation for important parts */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animated {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.3s; }
+        .delay-2 { animation-delay: 0.6s; }
+        .delay-3 { animation-delay: 0.9s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="animated">
+            <h1>በስመ አብ ወወልድ በመንፈስ ቅዱስ አሐዱ አምላክ አሜን!</h1>
+            <p>የሙሴ ታሪክ ከድርሳነ ሚካኤል ዘወርኃ ሚያዚያ</p>
+        </header>
+        
+        <main>
+            <section class="animated delay-1">
+                <h2>የሙሴ መወለድ</h2>
+                <p>ከረዥም ዘመናት በፊት በግብፅ ውስጥ ሙሴ የሚባል ሕፃን ተወለደ። ለእስራኤል ሕዝብ ነገሩ የከበደበት ወቅት ነበር።</p>
+                <p>የግብፅ ንጉሥ የነበረው ፈርኦን የእስራኤል ሕዝባች ቁጥራቸው እየጨመረ መምጣቱን ፈራ፤ ስለዚህም ክፉ አገዛዝ አደረገ። እስራኤላውያን የተወለዱትን ወንዶች ልጆች በሙሉ መውሰድ ነበረባቸው።</p>
+                <p>የሙሴ እናት ግን ይህንን በልጇ ላይ እንዲደርስ ስላልፈለገች ሙሴን በቅርጫት ውስጥ አስቀመጠችው እና በቀስታ በአባይ ወንዝ ዳር ባሉ ሸንበቆዎች መካከል አስቀመጠችው።</p>
+            </section>
+            
+            <section class="animated delay-2">
+                <h2>የፈርኦን ልጅ ያገኘችው</h2>
+                <p>የፈርኦን ልጅ የነበረችው በወንዙ እየታጠበች ሳለ የሙሴን የሚያሳዝን ድምፅ ሰማች፣ ሳጥኑንም ወደራሷ ስባ አነሳችው አዘነችለትም።</p>
+                
+                <div class="bible-verse">
+                    በዛችው ቅፅፈት እርሱን ተንከባክባ ለማሳደግ ወሰነች፣ ስለዚህ ሙሴ በእውነት እስራኤላዊው በግብፅ አለቃ በፈርኦን ቤተ መንግስት ውስጥ አደገ።
+                </div>
+                
+                <p>ሙሴ ካደገ በኃላ ፈርኦን በእስራኤላውያን ላይ ምን ያህል ክፉ ነገር እንደሚያደርግ ተመለከተ። ተግተው እንዲሰሩ ይገደዱ፤ ብዙም ጊዜ ይደበደቡ ነበር። ይህ ሙሴን ስላበሳጨው አንድ ቀን የእስራኤላውያን ባሪያ እየደበደበ ሳለ ግብፃዊ ዘበኛን ገደለው። ከዚ በኃላ ከግብፅ መውጣት ነበረበት እና ወደ ሩቅ ሀገር ሸሽቶ ለብዙ አመታት ኖረ።</p>
+            </section>
+            
+            <section class="animated delay-3">
+                <h2>የቃል ኪዳኑ መልእክት</h2>
+                <p>ዳግመኛም የግብፅ ሰዎች እና ፈርኦን እስራኤላውያን ላይ በመከራ ጊዜ መልዕክተኛውን ልኮ ያድናቸው ዘንድ ወደ እግዚአብሄር ጮሁ አመለከቱም። ክርስቶስም ከአብርሃም ከይስሀቅ እና ከያዕቆብ ጋር ያለውን ፅኑ መሀላ አስቦ የቃል ኪዳኑን መልእክተኛ ለሙሴ በደብረ ሲና በደመና አምድ ሆኖ በእፀ ጳጦስ መካከል እየነደደ እንጨቱ በእሳቱ ሳይቃጠል ታየው።</p>
+                
+                <div class="bible-verse">
+                    ሙሴም ግርማውን ባየ ጊዜ እያደነቀ ነገሩን ይረዳ ዘንድ ወደ ደመናው አምድ ቀረበ። እግዚአብሔርም ሙሴን እንዲህ አለው "የወገኖቼን መከራ አይቼ ጩኸታቸውንም ሰምቼ አድናቸው ዘንድ መጣው እነሆ የእስራኤል ልጆችን ታወጣ ዘንድ ወደ ፈርዖን እልክሃለው"
+                </div>
+                
+                <p>ሙሴም በጣም ፈራ ነገር ግን ሙሴም ከአሮን ጋር ወደ ግብፅ ሄዱ። ፈርዖንንም አናገሩት፤ ፈርዖን ግን ፈፅሞ እግዚአብሔርን እንደማያቀውና እስራኤላውያንን እንደማይለቅ አስረግጦ ነገራቸው።</p>
+            </section>
+            
+            <section>
+                <h2>የእግዚአብሔር ታምራት</h2>
+                <p>እግዚአብሔርም ለሙሴ እና ለአሮን ታምራት የሚያደርጉበትን ኃይልን ሰጣቸው። አሮን በትሩን ሲጥለው እባብ ሆነ ፤ የግብፅ አስማተኞችም በትሮቻቸው እባብ ሆነ፤ ነገር ግን የአሮን በትር የአስማተኞቹን እባብ ዋጠቻቸው የእግዚአብሔርንም ኃይል እያሳየ እንዲሁም ፈርኦንን ለማሳመን አስር መቅፀፍቆችን ላከ በየቦታው እንቁራሪትቶች፣ ቱሀኖች፣ እና በቀን ውስጥ ጨለማዎች ነበሩ።</p>
+                
+                <p>በመጨረሻም ከመጨረሻውና በጣም አሳዛኝ መቅፀፍት በኋላ ፈርኦን እስራኤላውያንን ነፃ ለማውጣት ተስማማ። ሙሴም እስራኤላውያንን ከግብፅ አወጣቸው። ጉዞአቸው ግን አላለቀም፣ እስራኤላውያን በባህሩ ዳር በበአል ዛፍ ፊት ለፊት ባለው በፊሀሒሮት አጠገቡ ሰፍረው ባሉ ጊዜ ፈርዖን ሀሳቡን ቀይሮ ከሰራዊቱ ጋር ተከተላቸው።</p>
+            </section>
+            
+            <section>
+                <h2>የቀይ ባሕር መለያየት</h2>
+                <p>ሙሴ ግን ወደ እግዚአብሔር እጁን ዘረጋ። እግዚአብሔርም ያንኑ መልአክ መድኃኒት አድርጎ ላከው፤ ሙሴም ወደ ባህሩ እጁን ዘረጋ፤ የምስራቅ ነፋስን አምጥቶ ባህሩን አስወገደው ባህሩም ደረቀ ውኃውም ተከፍሎ እንደ ግድግዳ ሆነላቸው። ግብፅውያንና ፈርዖን ፈረሶቻቸውን ይዘው ከኋላቸው ወደ ባህሩ ገቡ።</p>
+                
+                <div class="bible-verse">
+                    እግዚአብሔርም በእሳትና በደመና አምድ ሆኖ ግብፃውያንን ተመለከተ በዚያን ጊዜ ወደ ጭንቅም አስገባቸው አወካቸውም። እግዚአብሔርም ሙሴን "እጅህን በባህሩ ላይ ዘርጋ ውኃውም በፈረሰኞቻቸውም ላይ ይመለሳል" አለው። ሙሴም እጁን በባሕሩ ላይ ዘረጋ ባህሩም ወደ መፍሰሱ ተመለሰ።
+                </div>
+                
+                <p>ግብፃውያንም ከእርሱ ሸሹ። እግዚአብሔርም ግብፃውያን በባህሩ መካከል ጣላቸው። ወደ ውኃው የገቡትን የፈርዖን ሰራዊቶች ሁሉ ከደነ ከእነርሱም አንድም አልቀረም። በዚያን ጊዜ ሙሴና የእስራኤል ልጆች ሙዝሙር ለእግዚአብሔር ዘመሩ የአሮን እህት ነቢይቱ ማርያምም ከበሮ በእጅዋ ወሰደች። መልአኩም በበረሀ 40 ዓመት ሙሉ መና ከሰማይ እያወረደ መገባቸው።</p>
+                
+                <p>እስራኤላውያንን ቀን በደመና ሌሊት በእሳት ብርሃን የመራቸው ውኃውን እንደ ግድግዳ አቁሞ ባህሩን ከፍሎ ያሻገራቸው ከኋላቸው የተከተላቸውን ጠላታቸው ፈርዖንን ከነሠራዊቱ ያሰጠመ ይህ <span class="highlight">ቅዱስ ሚካኤል</span> ነው!!!</p>
+            </section>
+        </main>
+        
+        <footer>
+            <p>ምንጭ፦ ድርሳነ ሚካኤል ዘወርኃ ሚያዚያ ፤ ኦሪት ዘፀአት</p>
+            <p>በቤተልሔም አፈወርቅ</p>
+        </footer>
+    </div>
+</body>
+</html>
